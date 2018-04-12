@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6a0f7a9203864739b218db931e0f755a" Name="Diagram1">
+        <EntityTypeShape EntityType="MarcassinModel.Badge" Width="1.5" PointX="0.75" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarcassinModel.Competence" Width="1.5" PointX="6" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarcassinModel.Competence_Niveau_Interne" Width="1.5" PointX="8.25" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarcassinModel.Departement" Width="1.5" PointX="1.5" PointY="26.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarcassinModel.Employe" Width="1.5" PointX="3" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarcassinModel.Entreprise" Width="1.5" PointX="1.5" PointY="20.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarcassinModel.Language" Width="1.5" PointX="0.75" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarcassinModel.Like" Width="1.5" PointX="5.25" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarcassinModel.Message" Width="1.5" PointX="8.5" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarcassinModel.Niveau" Width="1.5" PointX="6" PointY="22.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarcassinModel.Pay" Width="1.5" PointX="0.75" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarcassinModel.Reunion" Width="1.5" PointX="8.25" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarcassinModel.Room" Width="1.5" PointX="5.25" PointY="19.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarcassinModel.sysdiagram" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarcassinModel.TraductionCompetence" Width="1.5" PointX="6" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarcassinModel.Utilisateur" Width="1.5" PointX="0.75" PointY="15.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarcassinModel.Ville" Width="1.5" PointX="1.5" PointY="23.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarcassinModel.Service" Width="1.5" PointX="3.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarcassinModel.Service_Traduction" Width="1.5" PointX="6" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarcassinModel.TraductionBadge" Width="1.5" PointX="6" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarcassinModel.TraductionPay" Width="1.5" PointX="3" PointY="7.875" IsExpanded="true" />
+        <AssociationConnector Association="MarcassinModel.FK_TraductionBadge_Badge" ManuallyRouted="false" />
+        <AssociationConnector Association="MarcassinModel.FK_Competence_Competence" ManuallyRouted="false" />
+        <AssociationConnector Association="MarcassinModel.FK_Competence_Niveau_Employe_Competence" ManuallyRouted="false" />
+        <AssociationConnector Association="MarcassinModel.FK_Competence_Service" ManuallyRouted="false" />
+        <AssociationConnector Association="MarcassinModel.FK_Reunion_Competence" ManuallyRouted="false" />
+        <AssociationConnector Association="MarcassinModel.FK_TraductionCompetence_Competence" ManuallyRouted="false" />
+        <AssociationConnector Association="MarcassinModel.FK_Competence_Niveau_Employe_Niveau" ManuallyRouted="false" />
+        <AssociationConnector Association="MarcassinModel.FK_Competence_Niveau_Employe_Utilisateur" ManuallyRouted="false" />
+        <AssociationConnector Association="MarcassinModel.FK_Departement_Pays" ManuallyRouted="false" />
+        <AssociationConnector Association="MarcassinModel.FK_Ville_Departement" ManuallyRouted="false" />
+        <AssociationConnector Association="MarcassinModel.FK_Employe_Langue" ManuallyRouted="false" />
+        <AssociationConnector Association="MarcassinModel.FK_Employe_Service" ManuallyRouted="false" />
+        <AssociationConnector Association="MarcassinModel.FK_Employe_Utilisateur" ManuallyRouted="false" />
+        <AssociationConnector Association="MarcassinModel.FK_Like_Employe" ManuallyRouted="false" />
+        <AssociationConnector Association="MarcassinModel.FK_Like_Employe1" ManuallyRouted="false" />
+        <AssociationConnector Association="MarcassinModel.FK_Message_Envoyeur" ManuallyRouted="false" />
+        <AssociationConnector Association="MarcassinModel.FK_Reunion_Chef" ManuallyRouted="false" />
+        <AssociationConnector Association="MarcassinModel.FK_Entreprise_Ville" ManuallyRouted="false" />
+        <AssociationConnector Association="MarcassinModel.FK_Utilisateur_Entreprise" ManuallyRouted="false" />
+        <AssociationConnector Association="MarcassinModel.FK_Service_Traduction_Traduction" ManuallyRouted="false" />
+        <AssociationConnector Association="MarcassinModel.FK_TraductionBadge_Language" ManuallyRouted="false" />
+        <AssociationConnector Association="MarcassinModel.FK_TraductionCompetence_Langue" ManuallyRouted="false" />
+        <AssociationConnector Association="MarcassinModel.FK_TraductionPays_Language" ManuallyRouted="false" />
+        <AssociationConnector Association="MarcassinModel.FK_Message_Room" ManuallyRouted="false" />
+        <AssociationConnector Association="MarcassinModel.FK_TraductionPays_Pays" ManuallyRouted="false" />
+        <AssociationConnector Association="MarcassinModel.FK_Utilisateur_Ville" ManuallyRouted="false" />
+        <AssociationConnector Association="MarcassinModel.FK_Service_Traduction_Service" ManuallyRouted="false" />
+        <AssociationConnector Association="MarcassinModel.Badge_Employe" ManuallyRouted="false" />
+        <AssociationConnector Association="MarcassinModel.Employe_Room" ManuallyRouted="false" />
+        <AssociationConnector Association="MarcassinModel.ParticipationReunion" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
